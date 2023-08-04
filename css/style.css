@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -6,6 +8,14 @@
 
 :root{
     --bg-url: url(../img/backg.jpg);
+    --text-color: white;
+    --surface-color: rgba(255,255,255,0.1);
+    --stroke-color: rgba(255,255,255,0.5);
+/* Modificações do Body */
+}
+body *{
+    font-family: "inter", sans-serif;
+    color: var(--text-color);
 
 }
 
@@ -14,6 +24,7 @@ body{
     height: 100vh;
 
 }
+/* Modificações container */
 #container{
     width: 100%;
     max-width: 588px;
@@ -21,6 +32,7 @@ body{
     padding: 0 24px;
 
 }
+/* Modificações imagem do perfil */
 #profile{
     text-align: center;
     padding: 24px;
@@ -35,4 +47,63 @@ body{
     object-fit: cover;
     
     
+}
+/* Modficações nome */
+#profile p{
+    margin-top: 8px;
+    font-weight: 500px;
+    line-height: 24px;
+
+}
+
+
+
+
+/* Links */
+#links ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+
+}
+
+#links ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 24px;
+
+    border: 1px solid var(--stroke-color);
+    border-radius: 8px;
+    background: var(--surface-color);
+
+    text-decoration: none;
+    font-weight: bold;
+}
+/* Modificações nos links das redes sociais */
+#sociallinks{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    font-size: 24px;
+
+}
+
+#sociallinks a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer{
+    text-align: center;
+    font-size: 14px;
+    padding: 24px;
+
+}
+
+#footer a {
+    text-decoration: none;
 }
